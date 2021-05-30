@@ -1,22 +1,51 @@
 import React, {useState} from 'react';
 import Login from './Login.js';
+import Signup from './Signup.js';
+import Navbar from './Navbar.js';
+import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
+import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
+
+let theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#2e1667",
+    },
+    secondary: {
+      main: "#c7d8ed",
+    },
+  },
+  typography: {
+    fontFamily: ['Roboto'],
+    h4: {
+      fontWeight: 600,
+      fontSize: 28,
+      lineHeight: '2rem',
+    },
+    h5: {
+      fontWeight: 100,
+      lineHeight: '2rem',
+    },
+  },
+});
 
 function App(){
-    return (
-        <div>
-          <header className="jumbotron jumbotron-fluid py-4">
-            <div className="container">
-              <h1>React App</h1>
-            </div>
-          </header>
-          <main className="container">
+  return (
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <Navbar/>
+        <div className="account-form">
+          <Switch>
+            <Route path='/login'>
               <Login/>
-          </main>
-          <footer className="container">
-            <small>This is the footer!</small>
-          </footer>
+            </Route>
+            <Route path='/register'>
+              <Signup/>
+            </Route>
+          </Switch>
         </div>
-      );
+        </ThemeProvider>
+    </div>
+  );
 }
 
 export default App;
