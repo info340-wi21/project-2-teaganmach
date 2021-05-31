@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import Login from './components/Login.js';
 import Signup from './components/Signup.js';
 import Navbar from './components/Navbar.js';
+import CalForm from './components/CalForm.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
+import ContainedButtons from './components/SubmitBtn.js';
 
 let theme = createMuiTheme({
   palette: {
@@ -33,6 +35,7 @@ function App(){
     <div className="App">
       <ThemeProvider theme={theme}>
         <Navbar/>
+        <CalForm/>
         <div className="account-form">
           <Switch>
             <Route path='/login'>
