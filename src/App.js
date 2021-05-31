@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Login from './components/Login.js';
 import Signup from './components/Signup.js';
-import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar';
+import Home_ from './components/home';
 import CalForm from './components/CalForm.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
@@ -34,7 +35,8 @@ function App(){
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Navbar/>
+        <Navbar />
+        <Home_ />
         <CalForm/>
         <div className="account-form">
           <Switch>
