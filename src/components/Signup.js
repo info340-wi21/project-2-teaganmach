@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import {NavLink} from 'react-router-dom';
-import "./css/login.css";
+import "../css/login.css";
 
 export default function Signup() {
     let [firstName, setFirstName] = useState("");
