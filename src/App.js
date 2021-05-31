@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Login from './Login.js';
-import Signup from './Signup.js';
-import Navbar from './Navbar.js';
+import Login from './components/Login.js';
+import Signup from './components/Signup.js';
+import Navbar from './components/Navbar.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
 
