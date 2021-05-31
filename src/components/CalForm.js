@@ -35,6 +35,9 @@ export default function CalForm() {
 
   return (
     <div>
+      <p>
+        Use this calorie tracker to determine how much you need to burn or eat in a day to gain/lose weight respectively. 
+      </p>
         <form className={classes.root} noValidate autoComplete="off">
             <TextField type="number" min="0" id="filled-basic" label="Enter Weight(kg)" variant="filled" onChange={(e) => {setWeight(e.target.value)}}/>
             <TextField type="number" min="0" id="filled-basic" label="Enter Height(cm)" variant="filled" onChange={(e) => {setHeight(e.target.value)}} />

@@ -47,8 +47,9 @@ class Home_ extends React.Component {
 			<div style={container}>
 				<p style={pStyle}>WELCOME TO [APP NAME]</p>
 				
-				<p style={p2Style}>Bogged down by quarantine blues? Try [OUR APP NAME], the website designed to help board individuals find
-					new hobbies to stay healthy in body and mind</p>
+				<p style={p2Style}>Feeling sick from quarantine blues? Try [OUR APP NAME], the website designed to help bored individuals find
+					new hobbies to stay healthy in body and mind!<br/>(Currently, the only feature we have enabled is the calorie tracker-- 
+					check it out in the health data tab!)</p>
 				{/* <a style={buttonStyle} href="#" >EXPLORE</a>         */}
 			</div>
 			

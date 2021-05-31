@@ -36,18 +36,22 @@ function App(){
     <div className="App">
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Home_ />
-        <CalForm/>
-        <div className="account-form">
-          <Switch>
+        <Switch>
+          <Route exact path="/">
+            <Home_/>
+          </Route>
+          <Route path="/Health-Data">
+            <CalForm/>
+          </Route>
+          <div className="account-form">
             <Route path='/login'>
               <Login/>
             </Route>
             <Route path='/register'>
               <Signup/>
-            </Route>
-          </Switch>
-        </div>
+            </Route>`
+          </div>
+        </Switch>
         </ThemeProvider>
     </div>
   );
