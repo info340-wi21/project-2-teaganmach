@@ -1,5 +1,19 @@
 import React from 'react';
 // import './css/home.css';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+
+const firebaseConfig = {
+	apiKey: "AIzaSyBRLQH4lYcb4PcxmmkfJLoH--9Dha3HAw4",
+	authDomain: "info340-react-app.firebaseapp.com",
+	databaseURL: "https://info340-react-app-default-rtdb.firebaseio.com",
+	projectId: "info340-react-app",
+	storageBucket: "info340-react-app.appspot.com",
+	messagingSenderId: "180506027778",
+	appId: "1:180506027778:web:9abab356e9c73b50fd841b"
+  };
+  firebase.initializeApp(firebaseConfig);
 
 const pStyle = {
 	fontSize: '30px',

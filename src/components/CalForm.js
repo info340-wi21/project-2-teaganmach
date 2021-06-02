@@ -6,6 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import ContainedButtons from './SubmitBtn';
 import TextField from '@material-ui/core/TextField';
+import firebase from 'firebase/app';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -24,6 +25,12 @@ export default function CalForm() {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const [age, setAge] = useState(0);
+
+  let ref = firebase.database().ref('/');
+  ref.on('value', snapshot => {
+    const state = snapshot.val();
+    console.log(state);
+  });
 
   const handleActLvl = (event) => {
     setActLvl(event.target.value);
