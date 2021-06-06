@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import Login from './components/Login.js';
 import Signup from './components/Signup.js';
+import Home from './components/Homepage.js';
 import Navbar from './components/Navbar';
-import Home_ from './components/home';
 import CalForm from './components/CalForm.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
@@ -38,7 +38,7 @@ function App(){
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home_/>
+            <Home/>
           </Route>
           <Route path="/Health-Data">
             <CalForm/>

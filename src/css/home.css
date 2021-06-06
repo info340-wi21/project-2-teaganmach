@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+h1 {
+    font-size: '30px';
+    text-align: center;
+  	font-family: 'Georgia';
+  	font-weight: bold;
+    color: #3c85cf;
+	margin-top: '150px';
+    padding: 50px 50px;
+  	padding-bottom: '50px';
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0px 50px;
+    font-weight: bold;
+}
+
+/* const buttonStyle = {
+    boxShadow: '0px 0px 2px 2px #9fb4f2',
+    backgroundColor:'rgb(49, 97, 185)',
+    borderRadius:'12px',
+    border:'solid 0.5px #445383',
+    display:'inline-block',
+    color: 'white',
+    padding:'15px 30px', 
+    textDecoration:'none',
+    fontSize:'20px',
+    textAlign: 'center',
+    }
+*/
