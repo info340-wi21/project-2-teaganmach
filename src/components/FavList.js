@@ -30,9 +30,11 @@ function compareValues(key, order = 'asc') {
     };
 }
 
-// sorting the list by name in alphabetical order
+// sorting the list by name in alphabetical order -- not needed?
 let sorted_favs = SAMPLE_FAVS.sort(compareValues('name'))
 
+// making the overall theme of the page using material-ui
+// SUBJECT TO CHANGE
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -42,15 +44,18 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+// function that renders the the list 
 function renderRow(props) {
-  const { index, style, arr } = props;
-
-  return (
-    <ListItem button style={style} key={index}>
-      <ListItemText primary={`Item ${index + 1}`} />
-    </ListItem>
-  );
-}
+    const { index, style } = props;
+    // retrieve array of list item names
+    let result = SAMPLE_FAVS.map((obj) => obj.name).sort();
+  
+    return (
+      <ListItem button style={style} key={index}>
+        <ListItemText primary={result[index]} />
+      </ListItem>
+    );
+  }
 
 export default function VirtualizedList() {
   const classes = useStyles();
