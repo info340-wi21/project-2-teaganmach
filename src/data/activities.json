@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Yoga",
+        "category": "both"
+    },
+    {
+        "name": "Tennis",
+        "category": "body"
+    },
+    {
+        "name": "Basketball",
+        "category": "body"
+    },
+    {
+        "name": "Soccer",
+        "category": "body"
+    },
+    {
+        "name": "Meditate",
+        "category": "mind"
+    },
+    {
+        "name": "Reading",
+        "category": "mind"
+    },
+    {
+        "name": "Video games",
+        "category": "mind"
+    },
+    {
+        "name": "Cooking",
+        "category": "mind"
+    },
+    {
+        "name": "Bake",
+        "category": "mind"
+    },
+    {
+        "name": "Walk",
+        "category": "both"
+    },
+    {
+        "name": "Hike",
+        "category": "both"
+    },
+    {
+        "name": "Sew",
+        "category": "mind"
+    }
+]
