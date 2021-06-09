@@ -19,6 +19,7 @@ const useStyles = makeStyles({
 export default function MediaCard(props) {
   const classes = useStyles();
 
+  //Cards to show each amount of calories needed to gain, maintain, or lose weight
   return (
     <div>
         <Card className={classes.root}>

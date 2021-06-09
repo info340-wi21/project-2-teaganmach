@@ -25,6 +25,7 @@ export default function ContainedButtons(props) {
     let loseWght = 0;
     let gainWght = 0;
 
+    // Calorie calculations, based on activity level and other inputs from user
     if (props.gender == 1) {
         if (props.actLevel == 10) {
             maintainWght = 1.2 * ((10 * props.weight) + (6.25 * props.height) - (5 * props.age) + 5);
@@ -63,6 +64,7 @@ export default function ContainedButtons(props) {
     
 }
 
+  //Submit button that shows the results after clicking
   return (
     <div className={classes.root}>
       <Button variant="contained" color="primary" onClick={calcCalories}>

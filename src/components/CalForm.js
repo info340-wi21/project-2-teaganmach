@@ -40,6 +40,7 @@ export default function CalForm() {
     setGender(event.target.value);
   };
 
+  //Input boxes of variety that allow users to input their information like weight, height, age, etc.
   return (
     <div>
       <p>
