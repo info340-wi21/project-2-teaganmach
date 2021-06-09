@@ -1,6 +1,7 @@
 import React from 'react'
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavbarElements';
 
+
 const Navbar = () => {
     return (
         <>
@@ -20,6 +21,9 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/Health-Data">
                     Health Data
+                </NavLink>
+                <NavLink to="/Planner">
+                    Planner
                 </NavLink>
 
             </NavMenu>

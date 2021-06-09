@@ -1,0 +1,52 @@
+
+.plannerList{
+    padding: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.formPart{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.outputCss{
+    color: black;
+}
+
+.outputCss:hover {
+    cursor: pointer;
+}
+
+.outputList {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+.outputList li {
+    color: black(5, 5, 5);
+    background-color: rgba(68, 147, 238, 0.5);
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    list-style: none;
+    font-family: 'OCR A Std', monospace;
+}
+
+.outputList li:hover{
+    background-color: rgb(17, 192, 192);
+    text-decoration: line-through;
+}
+
+.completeTask {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+    padding-top: 100px;
+}

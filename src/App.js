@@ -7,6 +7,7 @@ import CalForm from './components/CalForm.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
 import ContainedButtons from './components/SubmitBtn.js';
+import TodoList from "./components/PlannerList/planner.js";
 
 let theme = createMuiTheme({
   palette: {
@@ -42,6 +43,9 @@ function App(){
           </Route>
           <Route path="/Health-Data">
             <CalForm/>
+          </Route>
+          <Route path="/Planner">
+            <TodoList/>
           </Route>
           <div className="account-form">
             <Route path='/login'>
