@@ -32,12 +32,12 @@ export default function Home() {
 	return (
 	<div>
 		<div class="container">
-		<h1>Welcome to <em>2hBM</em>!</h1>
+		<h1>Welcome to <em>Healthy Body Healthy Mind</em>!</h1>
 		
 		<p>Feeling sick from quarantine blues? Here at 2hBM, we are dedicated to helping bored individuals find
 			new exercises to stay healthy in <b><em>body and mind</em></b>! Use this webapp to find new fun exercises that won't take up much of your time, and learn
 			how to practice mindfulness.</p>
-		<a style={buttonStyle} href="/Health-Data" >Get started with our health planner!</a>
+		<a style={buttonStyle} href="/Health-Data" >Get started with our health data!</a>
 		</div>
 	</div>
 	);

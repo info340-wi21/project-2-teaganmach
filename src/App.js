@@ -9,6 +9,7 @@ import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
 import ContainedButtons from './components/SubmitBtn.js';
 import TodoList from "./components/PlannerList/planner.js";
+import Logout from './components/Logout.js';
 
 let theme = createMuiTheme({
   palette: {
@@ -57,6 +58,9 @@ function App(){
             </Route>
             <Route path='/register'>
               <Signup/>
+            </Route>
+            <Route path='/logout'>
+              <Logout/>
             </Route>`
           </div>
         </Switch>
