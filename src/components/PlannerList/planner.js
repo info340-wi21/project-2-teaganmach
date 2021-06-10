@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Button } from 'reactstrap';
 import Items from "./Items";
-import './planner.css'
+import '../../css/planner.css'
  
 class TodoList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: [{text:"Reasonable calorie intake", key:0},
+            items: [{text:"Getting up to stand at least once every hour", key:0},
                     {text:"At least seven hours of sleep", key:1},
-                    {text:"Reasonable time to eat and drink, no less than three meals", key:2},
+                    {text:"Three meals a day + healthy snack", key:2},
                     {text:"30 minutes of moderate physical activity", key:3}]
         };
      
@@ -51,10 +51,10 @@ class TodoList extends Component {
         <div className="plannerList">
             <div className="mainText">
                 <h3>
-                    The Planner Will Help You Manage Your Plan
+                    List out the daily steps to achieve your health goals!
                 </h3>
                 <p>
-                You need to visit our Health Data page first
+                **You will need to visit our Health Data page first to determine a recommended plan and edit this premade one!**
                 </p>
             </div>
             <div className="formPart">

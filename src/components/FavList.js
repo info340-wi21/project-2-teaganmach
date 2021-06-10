@@ -6,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import { FixedSizeList } from "react-window";
 import SAMPLE_FAVS from '../data/activities.json';
+import '../css/favorites.css';
 
 // making a comparison function
 function compareValues(key, order = 'asc') {
@@ -59,19 +60,28 @@ function renderRow(props) {
     );
   }
 
-export default function VirtualizedList() {
+export default function FavsList() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <FixedSizeList
-        height={400}
-        width={300}
-        itemSize={40}
-        itemCount={SAMPLE_FAVS.length}
-      >
-        {renderRow}
-      </FixedSizeList>
+    <div className="jumbotron">
+      <div className="container">
+        <div className="row">
+          <div className="left-panel col-sm">
+            <h3>Click on an activity to assign it as a favorite:</h3> 
+            <FixedSizeList
+              height={400}
+              width={300}
+              itemSize={40}
+              itemCount={SAMPLE_FAVS.length}>
+              {renderRow}
+            </FixedSizeList>
+          </div>
+          <div className="favs-panel col-sm-auto">
+            <h3>favorites go here!</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.container {
+    display: flex;
+}
+
+.row {
+    margin: 10px 10px;
+}
+h3 {
+    text-align: left;
+    line-height: 1;
+    padding-bottom: 20px;
+    color:darkgreen;
+    font-size: 24px;
+}
+
+  
+  
+
+  

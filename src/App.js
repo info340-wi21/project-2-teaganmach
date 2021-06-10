@@ -4,6 +4,7 @@ import Signup from './components/Signup.js';
 import Home from './components/Homepage.js';
 import Navbar from './components/Navbar';
 import CalForm from './components/CalForm.js';
+import FavsList from './components/FavList.js';
 import { createMuiTheme, ThemeProvider} from '@material-ui/core/styles'
 import { Route, Switch, Link, Redirect, NavLink } from 'react-router-dom';
 import ContainedButtons from './components/SubmitBtn.js';
@@ -46,6 +47,9 @@ function App(){
           </Route>
           <Route path="/Planner">
             <TodoList/>
+          </Route>
+          <Route path="/activities">
+            <FavsList/>
           </Route>
           <div className="account-form">
             <Route path='/login'>

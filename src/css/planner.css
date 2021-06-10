@@ -8,6 +8,12 @@
     justify-content: center;
 }
 
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
 .formPart{
     display: flex;
     justify-content: center;

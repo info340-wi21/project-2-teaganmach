@@ -15,17 +15,29 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
+  const buttonStyle = {
+    backgroundColor:'rgb(49, 97, 185)',
+    borderRadius:'22px',
+    border:'solid 0.5px #445383',
+    display:'inline-block',
+    color: 'white',
+    padding:'15px 30px', 
+    textDecoration:'none',
+    fontSize:'20px',
+    textAlign: 'center',
+	fontFamily: 'sans-serif', 
+    };
+
 export default function Home() {
 	return (
 	<div>
 		<div class="container">
-		<h1>WELCOME TO [APP NAME]</h1>
+		<h1>Welcome to <em>2hBM</em>!</h1>
 		
-		<p>Feeling sick from quarantine blues? Try [OUR APP NAME], the website designed to help bored individuals find
-			new exercises to stay healthy in body and mind!<br/>(Currently, the only feature we have enabled is the calorie tracker-- 
-			check it out in the health data tab!) Use this webapp to find new fun exercises that won't take up much of your time, and learn
+		<p>Feeling sick from quarantine blues? Here at 2hBM, we are dedicated to helping bored individuals find
+			new exercises to stay healthy in <b><em>body and mind</em></b>! Use this webapp to find new fun exercises that won't take up much of your time, and learn
 			how to practice mindfulness.</p>
-		{/* <a style={buttonStyle} href="#" >EXPLORE</a>         */}
+		<a style={buttonStyle} href="/Health-Data" >Get started with our health planner!</a>
 		</div>
 	</div>
 	);
