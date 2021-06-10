@@ -1,50 +1,38 @@
-[
+[    
     {
-        "name": "Yoga",
-        "category": "both"
+        "name": "Bake"
     },
     {
-        "name": "Tennis",
-        "category": "body"
+        "name": "Basketball"
     },
     {
-        "name": "Basketball",
-        "category": "body"
+        "name": "Cooking"
     },
     {
-        "name": "Soccer",
-        "category": "body"
+        "name": "Hike"
     },
     {
-        "name": "Meditate",
-        "category": "mind"
+        "name": "Meditate"
     },
     {
-        "name": "Reading",
-        "category": "mind"
+        "name": "Reading"
     },
     {
-        "name": "Video games",
-        "category": "mind"
+        "name": "Sew"
     },
     {
-        "name": "Cooking",
-        "category": "mind"
+        "name": "Soccer"
     },
     {
-        "name": "Bake",
-        "category": "mind"
+        "name": "Tennis"
     },
     {
-        "name": "Walk",
-        "category": "both"
+        "name": "Video games"
     },
     {
-        "name": "Hike",
-        "category": "both"
+        "name": "Walk"
     },
     {
-        "name": "Sew",
-        "category": "mind"
+        "name": "Yoga"
     }
 ]
